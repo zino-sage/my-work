@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+<title>Web Calculator</title>
+<?php
+session_start();
+?>
+<script>
+function add()
+{
+    var n1 = document.getElementById('n1').value;
+    var n2 = document.getElementById('n2').value;
+    alert(+n1 + +n2);
+}
+function subtract()
+{
+    var n1 = document.getElementById('n1').value;
+    var n2 = document.getElementById('n2').value;
+    alert(n1-n2);
+}
+function multiply()
+{
+    var n1 = document.getElementById('n1').value;
+    var n2 = document.getElementById('n2').value;
+    alert(n1*n2);
+}
+function divide(n1, n2)
+{
+    var n1 = document.getElementById('n1').value;
+    var n2 = document.getElementById('n2').value;
+    alert(n1/n2);
+}
+</script>
+</head>
+<body>
+<h2>Web Calculator</h2>
+<p>This is a very simple web calculator with only four functions.</br>
+   type numbers into the empty text fields and click on any of the buttons bellow.</br>
+   The answer to the operation will be displayed in an alert.</p></br> 
+<input type="text" id="n1"/ placeholder="type a number"> </br> </br> <input type="text" id="n2"/ placeholder="type a number">
+<br>
+<br>
+<button type="button" onClick="add();">add</button> <button type="button" onClick="subtract();">subtract</button>
+<button type="button" onClick="multiply();">multiply</button> <button type="button" onClick="divide();">divide</button>
+</body>
+</html>
